@@ -13,6 +13,7 @@
 		<module>product-service</module>
 		<module>payment-service</module>
 		<module>user-address-service</module>
+		<module>authentication-service</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
