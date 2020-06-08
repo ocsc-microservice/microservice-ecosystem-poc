@@ -38,6 +38,14 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		return new ResponseEntity(error, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
+	@ExceptionHandler(BuisnessException.class)
+	public final ResponseEntity<Object> handleBusinessExceptions(Exception ex, WebRequest request) {
+		List<String> details = new ArrayList<>();
+		details.add(ex.getLocalizedMessage());
+		ErrorResponse error = new ErrorResponse(ex.getMessage(), details);
+		return new ResponseEntity(error, HttpStatus.BAD_REQUEST);
+	}
+
 	@ExceptionHandler(TechnicalException.class)
 	public final ResponseEntity<Object> handleTechnicalExceptions(Exception ex, WebRequest request) {
 		List<String> details = new ArrayList<>();
