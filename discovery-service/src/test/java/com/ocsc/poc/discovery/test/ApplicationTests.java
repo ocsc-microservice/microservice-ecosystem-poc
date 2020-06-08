@@ -1,4 +1,4 @@
-package com.cloudconfigserver.com.cloudconfigserver;
+package com.ocsc.poc.discovery.test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

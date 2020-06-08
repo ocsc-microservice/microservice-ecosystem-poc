@@ -7,7 +7,7 @@
 		<groupId>com.ocsc.microservices.ecosystem</groupId>
 	<artifactId>Orakart-microservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath>../</relativePath>
 	</parent>
 	
 	<artifactId>payment-service</artifactId>
