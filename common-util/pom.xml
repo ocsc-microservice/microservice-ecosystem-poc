@@ -6,6 +6,7 @@
 	<groupId>com.ocsc.microservices.ecosystem</groupId>
 	<artifactId>Orakart-microservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<relativePath>../</relativePath>
 	</parent>
 	
 	<groupId>com.ocsc.poc.common</groupId>
@@ -94,12 +95,5 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+	
 </project>
